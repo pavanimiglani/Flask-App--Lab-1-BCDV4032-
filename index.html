@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat GIF Gallery</title>
+</head>
+<body>
+    <h1>Random Cat GIF</h1>
+    {% if cat_gif_url %}
+        <img src="{{ cat_gif_url }}" alt="Random Cat GIF" style="max-width: 100%;">
+    {% else %}
+        <p>Sorry, no cat GIF could be loaded at this time.</p>
+    {% endif %}
+</body>
+</html>
