@@ -1,0 +1,33 @@
+Random Cat GIF Flask App
+A simple and fun Dockerized Python Flask web application that displays a random cat GIF on each page load.
+
+1. Ensure you have the following installed:
+
+1. Python 3.6 or higher
+2. Docker
+
+2. Project Structure
+
+cat-gif-app/
+│
+├── app.py
+├── Dockerfile
+├── requirements.txt
+└── templates/
+    └── index.html
+
+
+3. Create the following files:
+    1. app.py: The main Flask application.
+    2. requirements.txt: Python dependencies.
+    3. Dockerfile: Instructions for Dockerizing the app.
+    4. templates/index.html: HTML template for the app.
+
+4. Building the Docker Image
+
+docker build -t cat-gif-app .
+
+5. Running the Docker Container
+
+docker run -p 5000:5000 cat-gif-app
+ 
