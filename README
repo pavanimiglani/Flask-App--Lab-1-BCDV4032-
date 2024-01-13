@@ -25,9 +25,23 @@ cat-gif-app/
 
 4. Building the Docker Image
 
-docker build -t cat-gif-app .
+docker build -t cat-gif-app.
 
 5. Running the Docker Container
 
 docker run -p 5000:5000 cat-gif-app
+
+6. Docker Hub Image
+
+docker pull pavanimiglani/cat-gif-app:1.0
+
+7. Running the Docker Container
+docker run -p 5000:5000 pavanimiglani/cat-gif-app:1.0
+
+8. Accessing the App
+Open the web browser and visit http://localhost:5000
+
+
+
+
  
